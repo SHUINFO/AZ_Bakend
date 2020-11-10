@@ -1,0 +1,55 @@
+<view class="container">
+
+
+<view class="doctor-banner">
+  <image src="{{doctorInfo.avatar}}" mode="widthFit" class="avatar" />
+  <image src="{{doctorInfo.hospital.logo}}" mode="heightFix" class="logo" />
+  <view class="name">
+	<picker bindchange="bindDoctorChange"  value="{{doctorIndex}}" range-key="name" range="{{doctorList}}">
+	<text>
+		{{doctorList[doctorIndex].name}} >
+	</text>
+	</picker>
+	</view>
+  <view class="position">{{doctorInfo.department}}{{doctorInfo.position}}</view>
+</view>
+
+<view class="entrance">
+	<view class="item">
+		<view class="img"></view>
+		<view class="text">用药打卡</view>
+	</view>
+	<view class="item">
+		<view class="img"></view>
+		<view class="text">如何用药</view>
+	</view>
+	<view class="item">
+		<view class="img"></view>
+		<view class="text">医生推荐</view>
+	</view>
+</view>
+
+
+	<!-- S 首页列表 -->
+	<view class="panel archives-list">
+	<view class="panel-title title">医生推荐</view>
+		<view class="panel-body">
+		<block wx:for="{{ archivesList }}" wx:key="key">
+				<navigator url="{{'../post/detail?id='+item.id}}">
+					{{ item.title }}
+				</navigator>
+			</block>
+
+
+
+    </view>
+	</view>
+	<!-- E 首页列表 -->
+
+	<!-- S 加载更多 -->
+	<template is="zan-loadmore" data="{{ loading: loading }}" />
+	<template is="zan-loadmore" data="{{ nodata: nodata }}" />
+	<template is="zan-loadmore" data="{{ nomore: nomore }}" />
+	<!-- E 加载更多 -->
+
+</view>

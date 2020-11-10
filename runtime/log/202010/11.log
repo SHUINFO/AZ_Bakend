@@ -1,0 +1,1756 @@
+---------------------------------------------------------------
+[ 2020-10-11T00:33:34+08:00 ] 64.225.126.37 GET 81.68.172.225/api/v1/pods
+[运行时间：0.004435s] [吞吐率：225.48req/s] [内存消耗：370.59kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000168s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000179s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000031s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1',
+    2 => 'pods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000059s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T04:36:44+08:00 ] 128.14.134.134 GET 81.68.172.225/
+[运行时间：0.002994s] [吞吐率：333.99req/s] [内存消耗：477.90kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000140s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000151s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000023s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000051s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000027s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T04:51:26+08:00 ] 139.162.145.250 GET 81.68.172.225/bag2
+[运行时间：0.002727s] [吞吐率：366.70req/s] [内存消耗：354.84kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000132s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000142s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000025s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bag2',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T05:28:26+08:00 ] 74.120.14.36 GET 81.68.172.225:443/
+[运行时间：0.002742s] [吞吐率：364.69req/s] [内存消耗：477.13kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000136s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000146s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000022s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '81.68.172.225:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000062s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000028s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T05:28:27+08:00 ] 74.120.14.36 GET 81.68.172.225/
+[运行时间：0.002338s] [吞吐率：427.73req/s] [内存消耗：477.84kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000121s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000132s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000017s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000047s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000024s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T06:56:53+08:00 ] 83.97.20.35 GET 81.68.172.225/
+[运行时间：0.003107s] [吞吐率：321.87req/s] [内存消耗：477.20kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000181s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000192s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000036s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000054s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000030s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000015s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T07:58:47+08:00 ] 175.24.3.248 POST az-ips.wxhoutai.com/addons/cms/wxapp.common/init
+[运行时间：0.004973s] [吞吐率：201.09req/s] [内存消耗：717.65kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000162s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000173s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000026s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.common',
+  'action' => 'init',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000070s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T07:58:48+08:00 ] 118.89.199.88 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/index
+[运行时间：0.005844s] [吞吐率：171.12req/s] [内存消耗：745.22kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000113s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000123s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'content-length' => '17',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'channel' => '4',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'index',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000066s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T07:59:06+08:00 ] 49.234.22.22 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.018790s] [吞吐率：53.22req/s] [内存消耗：812.63kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000112s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000055s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T07:59:28+08:00 ] 49.235.68.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.061329s] [吞吐率：16.31req/s] [内存消耗：812.66kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000133s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000145s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000030s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000059s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T07:59:43+08:00 ] 129.211.48.15 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.012907s] [吞吐率：77.48req/s] [内存消耗：812.63kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000131s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000027s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '13',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000065s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T07:59:50+08:00 ] 81.68.173.13 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.014337s] [吞吐率：69.75req/s] [内存消耗：812.63kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000155s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000167s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000029s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000060s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T07:59:54+08:00 ] 49.235.114.129 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/index
+[运行时间：0.007503s] [吞吐率：133.28req/s] [内存消耗：745.82kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000114s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000124s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000018s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '60',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'channel' => '4',
+  '__token__' => '6814f9196347fc23a1cf8ac39d9e096c',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'index',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000054s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:00:10+08:00 ] 118.89.82.11 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getClock
+[运行时间：0.002401s] [吞吐率：416.51req/s] [内存消耗：472.64kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000118s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000129s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000020s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '80',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'y' => '2020',
+  'm' => '10',
+  'd' => '11',
+  '__token__' => '6814f9196347fc23a1cf8ac39d9e096c',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000209s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:00:24+08:00 ] 81.68.168.16 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/index
+[运行时间：0.008169s] [吞吐率：122.41req/s] [内存消耗：745.76kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000125s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000137s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000020s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '60',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'channel' => '3',
+  '__token__' => '6814f9196347fc23a1cf8ac39d9e096c',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'index',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000057s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:00:38+08:00 ] 81.68.168.16 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.013146s] [吞吐率：76.07req/s] [内存消耗：810.82kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000115s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000125s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000020s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '56',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+  '__token__' => '6814f9196347fc23a1cf8ac39d9e096c',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000055s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:01:22+08:00 ] 81.68.166.112 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.015129s] [吞吐率：66.10req/s] [内存消耗：810.82kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000157s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000168s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000031s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '56',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+  '__token__' => '6814f9196347fc23a1cf8ac39d9e096c',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000064s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:01:40+08:00 ] 118.89.77.168 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.012022s] [吞吐率：83.18req/s] [内存消耗：810.82kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000117s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000128s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000018s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '56',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+  '__token__' => '6814f9196347fc23a1cf8ac39d9e096c',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000054s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:01:47+08:00 ] 129.211.48.15 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.013003s] [吞吐率：76.91req/s] [内存消耗：810.55kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000121s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '56',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22',
+  '__token__' => '7736deda9ec60a17bcb1e99433fcd0c1',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000057s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:01:51+08:00 ] 175.24.85.223 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.012977s] [吞吐率：77.06req/s] [内存消耗：810.51kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000142s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000157s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000029s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '56',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22',
+  '__token__' => '7736deda9ec60a17bcb1e99433fcd0c1',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000071s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:01:55+08:00 ] 81.68.170.147 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.012602s] [吞吐率：79.35req/s] [内存消耗：810.51kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000113s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000124s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000020s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '56',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '21',
+  '__token__' => '7736deda9ec60a17bcb1e99433fcd0c1',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000069s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:01:59+08:00 ] 175.24.68.30 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/detail
+[运行时间：0.011424s] [吞吐率：87.53req/s] [内存消耗：810.51kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000114s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000124s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000020s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '56',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '21',
+  '__token__' => 'c6e63622a603777513f37eac902c966f',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'detail',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000090s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:02:04+08:00 ] 123.207.186.205 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/setClock
+[运行时间：0.002242s] [吞吐率：446.06req/s] [内存消耗：472.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000140s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000151s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000018s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '88',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'y' => '2020',
+  'm' => '10',
+  'd' => '11',
+  'type' => 'am',
+  '__token__' => 'fc32200d3bb5940e8007859e3a22caa0',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'setClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000056s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:02:09+08:00 ] 175.24.68.177 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/setClock
+[运行时间：0.001996s] [吞吐率：501.05req/s] [内存消耗：472.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000112s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '88',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'y' => '2020',
+  'm' => '10',
+  'd' => '11',
+  'type' => 'pm',
+  '__token__' => 'fc32200d3bb5940e8007859e3a22caa0',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'setClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000051s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:02:29+08:00 ] 175.24.98.52 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getClock
+[运行时间：0.003313s] [吞吐率：301.84req/s] [内存消耗：472.64kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000339s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000350s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000026s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '79',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'y' => '2020',
+  'm' => '9',
+  'd' => '01',
+  '__token__' => 'fc32200d3bb5940e8007859e3a22caa0',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000065s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:02:34+08:00 ] 81.68.169.188 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getClock
+[运行时间：0.002608s] [吞吐率：383.43req/s] [内存消耗：472.64kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000363s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000376s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000024s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '79',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'y' => '2020',
+  'm' => '9',
+  'd' => '02',
+  '__token__' => 'fc32200d3bb5940e8007859e3a22caa0',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000056s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:02:40+08:00 ] 81.68.172.215 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getClock
+[运行时间：0.002054s] [吞吐率：486.80req/s] [内存消耗：472.64kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000112s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '79',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'y' => '2020',
+  'm' => '9',
+  'd' => '03',
+  '__token__' => 'fc32200d3bb5940e8007859e3a22caa0',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000053s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:02:45+08:00 ] 175.24.69.54 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getClock
+[运行时间：0.002131s] [吞吐率：469.27req/s] [内存消耗：472.64kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000128s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000138s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '79',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'y' => '2020',
+  'm' => '9',
+  'd' => '04',
+  '__token__' => 'fc32200d3bb5940e8007859e3a22caa0',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000054s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:03:16+08:00 ] 81.68.168.40 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getQa
+[运行时间：0.002076s] [吞吐率：481.72req/s] [内存消耗：471.88kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000116s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000129s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000023s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-wx-cascade-timeout' => '10000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 MicroMessenger/6.5',
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/1/page-frame.html',
+  'host' => 'az-ips.wxhoutai.com',
+  'cookie' => 'PHPSESSID=60072fqutvb6edfg1q6muqshq1; path=/',
+  'content-length' => '74',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '0',
+  'doctor_id' => '',
+  '__token__' => 'fc32200d3bb5940e8007859e3a22caa0',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getQa',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/az-ips.wxhoutai.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000067s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T08:41:46+08:00 ] 184.105.247.195 GET 81.68.172.225/
+[运行时间：0.003387s] [吞吐率：295.25req/s] [内存消耗：477.13kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000164s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000174s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000027s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000057s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000028s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000414s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T09:35:11+08:00 ] 83.97.20.35 GET 81.68.172.225/
+[运行时间：0.003010s] [吞吐率：332.22req/s] [内存消耗：477.20kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000146s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000157s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000024s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000051s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000028s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T10:21:02+08:00 ] 195.37.190.77 GET 81.68.172.225/dns-query?dns=AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB
+[运行时间：0.002591s] [吞吐率：385.97req/s] [内存消耗：355.24kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000144s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000154s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000025s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'dns-query',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (compatible; DNSResearchBot/2.1; +http://195.37.190.77)',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'dns' => 'AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T10:21:03+08:00 ] 195.37.190.77 POST 81.68.172.225/dns-query
+[运行时间：0.001934s] [吞吐率：517.05req/s] [内存消耗：354.22kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000110s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000121s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'dns-query',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-type' => 'application/dns-message',
+  'accept' => 'application/dns-message',
+  'content-length' => '29',
+  'user-agent' => 'Mozilla/5.0 (compatible; DNSResearchBot/2.1; +http://195.37.190.77)',
+  'host' => '81.68.172.225',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T13:16:32+08:00 ] 128.14.134.170 GET 81.68.172.225/
+[运行时间：0.002998s] [吞吐率：333.57req/s] [内存消耗：477.90kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000137s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000147s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000024s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000050s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000028s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T16:00:23+08:00 ] 83.97.20.31 GET 81.68.172.225/
+[运行时间：0.002945s] [吞吐率：339.56req/s] [内存消耗：477.20kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000148s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000159s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000023s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000052s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000028s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T16:52:50+08:00 ] 185.142.236.43 GET 81.68.172.225/
+[运行时间：0.002887s] [吞吐率：346.38req/s] [内存消耗：477.96kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000154s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000168s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000026s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => '81.68.172.225',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000053s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000030s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000015s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T17:34:19+08:00 ] 185.132.53.161 GET 81.68.172.225:443/
+[运行时间：0.002821s] [吞吐率：354.49req/s] [内存消耗：455.31kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000136s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000146s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000024s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-GB,en;q=0.5',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0',
+  'host' => '81.68.172.225:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000051s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000028s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T19:28:34+08:00 ] 183.136.225.56 GET 81.68.172.225/
+[运行时间：0.002869s] [吞吐率：348.54req/s] [内存消耗：477.96kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000141s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000153s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000024s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Baiduspider+(+http://www.baidu.com/search/spider.htm);googlebot|baiduspider|baidu|spider|sogou|bingbot|bot|yahoo|soso|sosospider|360spider|youdaobot|jikeSpider;)',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000053s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000039s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000015s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T20:34:47+08:00 ] 192.241.231.234 GET 81.68.172.225/owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f
+[运行时间：0.002884s] [吞吐率：346.75req/s] [内存消耗：355.21kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000160s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000173s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000025s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'owa',
+    1 => 'auth',
+    2 => 'logon.aspx',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'https://1/ecp/',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-10-11T20:52:04+08:00 ] 83.97.20.35 GET 81.68.172.225/
+[运行时间：0.002775s] [吞吐率：360.37req/s] [内存消耗：477.20kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000138s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000148s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000024s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '81.68.172.225',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000052s ]
+[ info ] [ BEHAVIOR ] Run \addons\third\Third @config_init [ RunTime:0.000030s ]
+[ info ] [ LANG ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/az-ips.wxhoutai.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/az-ips.wxhoutai.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000014s ]
+[ info ] [ LOG ] INIT File

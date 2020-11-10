@@ -1,0 +1,27 @@
+.container{
+  width: 750rpx;
+  padding-top: 26rpx;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color:#fff;
+}
+.navigator{
+  height:126rpx;
+  font-size:36rpx;
+  color:rgba(0,0,0,1);
+  padding:0 46rpx;
+  background-color: #ffffff;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigator+.navigator{
+  border-top: solid 1px #e5e5e5;
+}
+.navigator .fa{
+  color: #C7C7CC;
+  font-size: 24rpx;
+}
+.weui-footer{
+  padding: 48rpx;
+}

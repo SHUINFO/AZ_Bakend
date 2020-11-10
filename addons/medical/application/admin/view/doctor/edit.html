@@ -1,0 +1,115 @@
+<form id="add-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" action="">
+    <div class="form-group">
+        <label for="module" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="title" name="row[name]" value="{$row.name}" data-rule="required" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="module" class="control-label col-xs-12 col-sm-2">{:__('Mobile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="title" name="row[mobile]" value="{$row.mobile}" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('Gender')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[gender]', ['1' => __('Male'), '2' => __('Female')], $row['gender'])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="wxid" class="control-label col-xs-12 col-sm-2">{:__('wxid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="wxid" name="row[wxid]" value="{$row.wxid}" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('hospital')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="hospital_id" data-source="hospital/index" value="{$row.hospital_id}" class="form-control selectpage" name="row[hospital_id]" type="text" value="">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('deparment')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select class="form-control selectpicker" data-source="hospital/department" id="department" name="row[department]"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="title" class="control-label col-xs-12 col-sm-2">{:__('title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="title" name="row[title]" value="{$row.title}" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="position" class="control-label col-xs-12 col-sm-2">{:__('position')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="position" name="row[position]" value="{$row.position}" />
+        </div>
+    </div>
+
+    <!-- <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('Category')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[category]', ['category1' => __('category1'), 'category2' => __('category2')], $row['category'])}
+        </div>
+    </div> -->
+    
+    <div class="form-group">
+        <label for="c-avatar" class="control-label col-xs-12 col-sm-2">{:__('Avatar')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-avatar" data-rule="" class="form-control" size="50" name="row[avatar]" type="text" value="{$row.avatar}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-avatar" class="btn btn-danger plupload" data-input-id="c-avatar" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-avatar"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-avatar" class="btn btn-primary fachoose" data-input-id="c-avatar" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-avatar"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-avatar"></ul>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="c-wxgroup_qr" class="control-label col-xs-12 col-sm-2">{:__('wxgroup_qr')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-wxgroup_qr" data-rule="" class="form-control" size="50" name="row[wxgroup_qr]" type="text" value="{$row.wxgroup_qr}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-wxgroup_qr" class="btn btn-danger plupload" data-input-id="c-wxgroup_qr" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-wxgroup_qr"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-wxgroup_qr" class="btn btn-primary fachoose" data-input-id="c-wxgroup_qr" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-wxgroup_qr"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-wxgroup_qr"></ul>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="c-avatar" class="control-label col-xs-12 col-sm-2">{:__('wxgzh_qr')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-wxgzh_qr" data-rule="" class="form-control" size="50" name="row[wxgzh_qr]" type="text" value="{$row.wxgzh_qr}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-wxgzh_qr" class="btn btn-danger plupload" data-input-id="c-wxgzh_qr" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-wxgzh_qr"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-wxgzh_qr" class="btn btn-primary fachoose" data-input-id="c-wxgzh_qr" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-wxgzh_qr"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-wxgzh_qr"></ul>
+        </div>
+    </div>
+
+    <div class="form-group hide layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

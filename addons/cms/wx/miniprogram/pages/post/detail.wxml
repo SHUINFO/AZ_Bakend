@@ -1,0 +1,40 @@
+<view class="page-content page-article data-v-6d004d46">
+	<view class="media-box data-v-6d004d46">
+		<block wx:if="{{post.video}}">
+                  <video class="video-com data-v-6d004d46" id="myVideo" src="{{post.video}}" controls="{{true}}" poster="{{post.video_cover     }}"></video>
+            </block>
+		<block wx:if="{{post.image}}">
+			<image class="video-com data-v-6d004d46" src="{{post.image}}" mode="widthFix"></image>
+		</block>
+	</view>
+	<view class="word-box data-v-6d004d46">
+		<view class="title data-v-6d004d46">
+            {{post.title}}
+            </view>
+
+
+		<view class="info">
+		<view class="author">作者:{{post.author}}</view>
+		<view class="create_date">发表于:{{post.create_date}}</view>
+		</view>
+
+		<view class="data-v-6d004d46">
+            {{post.content}}
+            </view>
+	</view>
+
+		<view class="btns" wx:if="{{patient_id}}">
+						<button open-type="share" class="btn browse-btn" data-idx="{{ index }}">转发</button>
+						<view class="btn favorites-btn" bindtap="action" data-action="fav" data-id="{{ item.id }}" wx:if="{{!item.has_fav}}">
+							收藏
+						</view>
+						<view class="btn browse-btn" wx:else>
+							已收藏
+						</view>
+					</view>
+					<view class="btns" wx:else>
+						<button open-type="share" class="btn browse-btn" data-idx="{{ index }}">转发</button>
+					</view>
+
+
+</view>

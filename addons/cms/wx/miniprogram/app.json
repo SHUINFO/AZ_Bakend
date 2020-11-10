@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/index",
+    "pages/news/detail",
+    "pages/product/index",
+    "pages/product/detail",
+    "pages/my/index",
+    "pages/my/comment",
+    "pages/my/profile",
+    "pages/my/join",
+    "pages/my/bind",
+    "pages/my/aboutus",
+    "pages/my/setting",
+    "pages/post/index",
+    "pages/post/detail",
+    "pages/video/index",
+    "pages/video/detail",
+    "pages/science/index",
+    "pages/doctor/index",
+    "pages/system/webview",
+    "pages/myInformation/index",
+    "pages/howuse/index",
+    "pages/videolist/index",
+    "pages/articleDetail/index",
+    "pages/medicClock/index",
+    "pages/daka/daka"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9494AB",
+    "selectedColor": "#12b2b3",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/tabbar/icon_nav_01.png",
+        "selectedIconPath": "static/image/tabbar/icon_nav_01_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/post/index",
+        "iconPath": "static/image/tabbar/icon_nav_02.png",
+        "selectedIconPath": "static/image/tabbar/icon_nav_02_active.png",
+        "text": "治疗科普"
+      },
+      {
+        "pagePath": "pages/medicClock/index",
+        "iconPath": "static/image/tabbar/icon_nav_05.png",
+        "selectedIconPath": "static/image/tabbar/icon_nav_05_active.png",
+        "text": "用药打卡"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/image/tabbar/icon_nav_04.png",
+        "selectedIconPath": "static/image/tabbar/icon_nav_04_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "授权使用你的地理位置"
+    }
+  },
+  "plugins": {
+    "calendar": {
+      "version": "1.0.0",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,202 @@
+.page-doctor.data-v-91a16aea {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.page-doctor .w-box.data-v-91a16aea {
+  padding: 48rpx
+}
+
+.page-doctor .textarea.data-v-91a16aea {
+  height: 370rpx;
+  width: 100%;
+  background: transparent;
+  border-radius: 16rpx;
+  padding: 42rpx 0 36rpx 0;
+  box-sizing: border-box;
+}
+
+.page-doctor .textarea-place {
+  font-size: 32rpx;
+  color: rgba(0,0,0,.25);
+  line-height: 52rpx;
+  letter-spacing: 1px;
+}
+
+.page-doctor .text-num.data-v-91a16aea {
+  font-size: 24rpx;
+  color: rgba(0,0,0,.85);
+  margin-top: 26rpx;
+  text-align: right;
+}
+
+.page-doctor .text-num .num.data-v-91a16aea {
+  margin-left: 12rpx
+}
+
+.page-doctor .control.data-v-91a16aea {
+  margin-top: 50rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-bottom: 6rpx;
+  position: relative;
+
+}
+
+.page-doctor .control .btn.data-v-91a16aea {
+  width: 318rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+  color: #fff;
+  -webkit-transition: color 256ms;
+  transition: color 256ms;
+  text-align: center;
+  box-sizing: border-box;
+  margin:0;
+  background: -webkit-linear-gradient(45deg, #12b2b3, #56e0e0);
+  background: linear-gradient(45deg, #12b2b3, #56e0e0);
+}
+
+.page-doctor .control .btn.checked.data-v-91a16aea {
+  background: transparent;
+  color: #9493ad;
+  border: solid 1px #e0e0e0;
+}
+
+
+.page-doctor .history-box {
+  position: relative;
+  padding: 68rpx 0 48rpx 0;
+  min-height: 400rpx;
+  background: linear-gradient(180deg, rgba(84, 210, 255, 0.15) 0%, transparent 500rpx);
+  border-radius: 32px 32px 0px 0px;
+}
+.page-doctor .history-box .line{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 80rpx;
+  height: 8rpx;
+  background: #9c9898;
+  border-radius: 7px;
+  -webkit-transition: width 256ms;
+  transition: width 256ms
+}
+.page-doctor .history-box.show.data-v-91a16aea {
+  height: auto;
+  opacity: 1
+}
+
+.page-doctor .history-box .title-box {
+  display:flex;
+  align-items: center;
+  margin-bottom: 72rpx;
+  
+}
+.page-doctor .history-box .title-box .t{
+  padding:0 38rpx;
+  font-size: 30rpx;
+  color:rgba(0,0,0,.25);
+
+}
+.page-doctor .history-box .title-box .t .total{
+  color: #000;
+  font-weight: 500;
+}
+.page-doctor .history-box .title-box::before, .page-doctor .history-box .title-box::after {
+  content: '';
+  flex:1;
+  height:1px;
+  background-color:#ccc;
+  
+}
+.page-doctor .history-box .title .t.data-v-91a16aea {
+  font-size: 44rpx;
+  font-weight: 500
+}
+
+.page-doctor .history-box .title .info.data-v-91a16aea {
+  font-size: 30rpx;
+  color: #9393aa;
+  margin-left: 30rpx
+}
+
+.page-doctor .history-box .title .info .num.data-v-91a16aea {
+  color: #1e1f20;
+  font-size: 36rpx;
+  margin: 0 12rpx;
+  font-weight: 500
+}
+
+.page-doctor .history-box .history-list{
+  box-sizing: border-box;
+  padding: 0 48rpx;
+}
+.page-doctor .history-box .history-list .history-li{
+  display: flex;
+  flex-direction: column;
+  border-left:dashed 1px rgba(0,0,0,.5);
+}
+.page-doctor .history-box .history-list .history-li+.history-li{
+  padding-top: 68rpx;
+}
+
+.page-doctor .history-box .history-list .history-li .son-li{
+  display: flex;
+}
+
+
+.page-doctor .history-box .history-list .history-li .son-li .l{
+  flex:none;
+
+}
+
+.page-doctor .history-box .history-list .history-li .son-li .l image{
+  width: 52rpx;
+  height: 52rpx;
+  transform:translateX(-50%);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 52rpx;
+}
+
+.page-doctor .history-box .history-list .history-li .son-li .r{
+  flex:1;
+  padding-bottom:34rpx;
+}
+
+.page-doctor .history-box .history-list .history-li .son-li .r .btn{
+  height: 60rpx;
+  line-height: 60rpx;
+  padding:0 28rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #2574FF;
+  background: rgba(29, 161, 242, 0.08);
+  border-radius: 30rpx;
+  display:inline-block;
+  box-sizing: border-box;
+}
+.page-doctor .history-box .history-list .history-li .son-li .r .words{
+  font-size: 30rpx;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 48rpx;
+}
+.son-li .words.answer{
+  color:#1DA1F2;
+}
+.page-doctor .history-box .history-list .history-li .son-li .r .date{
+  font-size: 24rpx;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.25);
+  line-height: 28rpx;
+  margin-top: 6rpx;
+}

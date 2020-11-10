@@ -1,0 +1,1 @@
+<web-view class="webview data-v-3c85f3c8" src="{{webviewUrl}}" progress="{{false}}"></web-view>

@@ -1,0 +1,86 @@
+<view class="page-content page-doctor data-v-91a16aea">
+	<view class="w-box data-v-91a16aea">
+	<form bindsubmit="formSubmit">
+	<textarea class="textarea data-v-91a16aea" maxlength="300" placeholder-class="textarea-place" placeholder="请输入你的问题，我们会尽可能在每周六回复，该回复仅作为院外参考，有任何不适情况建议您及时到医院就诊。" value="{{textData}}" name="question"></textarea>
+		<view class="text-num data-v-91a16aea">最多300个字
+		<!-- <text class="num data-v-91a16aea">{{(textData?textData.length:0)+"/30"}}</text> -->
+		</view>
+		<view class="control data-v-91a16aea">
+			<view data-event-opts="{{[['tap',[['onShowHistory',['$event']]]]]}}" class="{{['data-v-91a16aea','btn',[(isShowHistory)?'checked':'']]}}" bindtap="__e">问答记录</view>
+			<!-- <view class="btn sub-btn data-v-91a16aea" bindtap="onSubmit">
+			</view> -->
+
+			 <button type="primary" size="large" formType="submit" class='btn sub-btn data-v-91a16aea'>提交</button>
+			
+		</view>
+	</form>
+	</view>
+	<view class="history-box" wx:if="{{historyData && historyData.length}}">
+		<view class="data-v-91a16aea line"></view>
+		<view class="title-box">
+			<view class="t">共提问<text class='total'>{{total}}</text>次</view>
+		</view>
+		<view class="history-list">
+		<block wx:for="{{historyData}}" wx:for-item="item" wx:for-index="" wx:key="id">
+
+			<!-- <view class="history-li data-v-91a16aea">
+				<view class="talk-box data-v-91a16aea">
+					<image class="q-tag data-v-91a16aea" src="/static/image/ic_doctor_answer.png"></image>
+						<view class="q data-v-91a16aea">
+							<view class="btn data-v-91a16aea" wx-if="{{!item.answer}}">待解答</view>
+							<view class="words data-v-91a16aea">问：{{item.question}}</view>
+
+				<view class="time-box data-v-91a16aea">
+					{{item.createtime}}
+				</view>
+
+						</view>
+				</view>
+			</view>
+
+			<view class="history-li data-v-91a16aea" wx-if="{{item.answer}}">
+				<view class="talk-box data-v-91a16aea">
+					<image class="q-tag data-v-91a16aea" src="/static/image/ic_doctor_answer.png"></image>
+						<view class="a data-v-91a16aea">
+							<view class="words data-v-91a16aea">答：{{item.answer}}</view>
+								<view class="time-box data-v-91a16aea">
+									{{item.updatetime}}
+								</view>
+						</view>
+				</view>
+			</view> -->
+			<view class='history-li'>
+				<!-- 一个问题已经被回答，显示答案 -->
+				<view class="son-li" wx:if="{{!!item.answer}}">
+					<view class='l'>
+						<image src="/static/image/icon_a.png"/>
+					</view>
+					<view class='r'>
+						<view class="words answer">{{item.answer}}</view>
+						<view class="date">{{item.updatetime}}</view>
+					</view>
+				</view>
+				<!-- 一个问题没有被回答，显示去解答按钮 -->
+				<view class="son-li" wx:else>
+					<view class='l'>
+						<image src="/static/image/icon_a.png"/>
+					</view>
+					<view class='r'>
+						<view class="btn">去解答</view>
+					</view>
+				</view>
+				<!-- 最下面显示问题 -->
+				<view class="son-li" wx:if="{{!!item.question}}">
+					<view class='l'>
+						<image src="/static/image/icon_q.png"/>
+					</view>
+					<view class='r'>
+						<view class="words">{{item.question}}</view>
+						<view class="date">{{item.createtime}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+		</view>
+	</view>
+</view>

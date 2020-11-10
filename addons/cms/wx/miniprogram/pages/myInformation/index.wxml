@@ -1,0 +1,38 @@
+<view class="page-content page-myinformation data-v-5bc813a5">
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">姓名</view>
+		<view class="data-v-5bc813a5">{{userInfo.name}}</view>
+	</view>
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">性别</view>
+		<view class="data-v-5bc813a5">{{genderArr[userInfo.gender]}}</view>
+	</view>
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">年龄</view>
+		<view class="data-v-5bc813a5">{{userInfo.birth_year ? 2020 - userInfo.birth_year : ''}}</view>
+	</view>
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">城市</view>
+		<view class="data-v-5bc813a5">上海</view>
+	</view>
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">关注疾病</view>
+		<view class="data-v-5bc813a5">{{diseaseArr[userInfo.disease]}}</view>
+	</view>
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">病史</view>
+		<view class="data-v-5bc813a5">{{userInfo.diagnose_at ? 2020 - userInfo.diagnose_at : ''}}</view>
+	</view>
+	<!-- <view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">急性发作频次</view>
+		<view class="data-v-5bc813a5">1月1次</view>
+	</view>
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">当前服用药物</view>
+		<view class="data-v-5bc813a5">信必可都保</view>
+	</view> -->
+	<view class="nav-li data-v-5bc813a5">
+		<view class="data-v-5bc813a5">吸烟史</view>
+		<view class="data-v-5bc813a5">{{smokeArr[userInfo.smoke]}}</view>
+	</view>
+</view>

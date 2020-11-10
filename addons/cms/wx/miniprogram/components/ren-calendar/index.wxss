@@ -1,0 +1,198 @@
+.calendar-wrapper.data-v-a628a180 {
+  color: #bbb7b7;
+  font-size: 28rpx;
+  text-align: center;
+  padding-bottom: 10rpx
+}
+
+.calendar-wrapper .header.data-v-a628a180 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  height: 88rpx;
+  color: #42464a;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  padding: 0 50rpx
+}
+
+.calendar-wrapper .header .title.data-v-a628a180 {
+  font-size: 44rpx;
+  font-weight: 500;
+  color: #000
+}
+
+.calendar-wrapper .header .title .year.data-v-a628a180 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #9393aa;
+  margin-left: 12rpx
+}
+
+.calendar-wrapper .header .pre,
+.calendar-wrapper .header .next {
+  color: #9393ac;
+  opacity: .6;
+  border-radius: 6rpx;
+  padding: 8rpx 15rpx;
+  -webkit-transform: background-color 256ms;
+  transform: background-color 256ms
+}
+
+.calendar-wrapper .header .pre image,
+.calendar-wrapper .header .next image{
+  width: 40rpx;
+  height:40rpx;
+}
+.calendar-wrapper .header .pre image{
+  transform: rotate(-90deg);
+}
+.calendar-wrapper .header .next image{
+  transform: rotate(90deg);
+}
+
+.calendar-wrapper .week.data-v-a628a180 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid hsla(0, 0%, 100%, .2)
+}
+
+.calendar-wrapper .week view.data-v-a628a180 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1
+}
+
+.calendar-wrapper .content.data-v-a628a180 {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: height .4s ease;
+  transition: height .4s ease
+}
+
+.calendar-wrapper .content .days.data-v-a628a180 {
+  -webkit-transition: top .3s;
+  transition: top .3s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative
+}
+
+.calendar-wrapper .content .days .item.data-v-a628a180 {
+  display: block;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: calc(100% / 7);
+  position: relative
+}
+
+.calendar-wrapper .content .days .item .day.data-v-a628a180 {
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  border-radius: 60rpx;
+  position: relative;
+  z-index: 2
+}
+
+.calendar-wrapper .content .days .item .day.marked.data-v-a628a180 {
+  color: #fff
+}
+
+.calendar-wrapper .content .days .item .day.choose.data-v-a628a180 {
+  background-color: #13B3B4;
+  color: #1E1F20
+}
+
+.calendar-wrapper .content .days .item .day.nolm.data-v-a628a180 {
+  color: #1E1F20;
+  opacity: .3
+}
+
+.calendar-wrapper .content .days .item .isWorkDay.data-v-a628a180 {
+  color: #1E1F20
+}
+
+.calendar-wrapper .content .days .item .notSigned.data-v-a628a180 {
+  font-style: normal;
+  width: 8rpx;
+  height: 8rpx;
+  background: #fa7268;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  pointer-events: none
+}
+
+.calendar-wrapper .content .days .item .today.data-v-a628a180 {
+  color: #fff;
+  background-color: #a8c0ff
+}
+
+.calendar-wrapper .content .days .item .workDay.data-v-a628a180 {
+  font-style: normal;
+  width: 8rpx;
+  height: 8rpx;
+  background: #4d7df9;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  pointer-events: none
+}
+
+.calendar-wrapper .content .days .item .markDay.data-v-a628a180 {
+  font-style: normal;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: -webkit-linear-gradient(45deg, #12b2b3, #56e0e0);
+  background: linear-gradient(45deg, #12b2b3, #56e0e0);
+  color:#fff;
+}
+
+.calendar-wrapper .hide.data-v-a628a180 {
+  height: 80rpx !important
+}
+
+.calendar-wrapper .weektoggle.data-v-a628a180 {
+  width: 85rpx;
+  height: 32rpx;
+  position: relative;
+  bottom: -42rpx
+}
+
+.calendar-wrapper .weektoggle.down.data-v-a628a180 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  bottom: 0
+}

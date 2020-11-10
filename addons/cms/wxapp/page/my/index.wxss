@@ -1,0 +1,18 @@
+.container{
+  width: 750rpx;
+  padding-top: 40rpx;
+}
+navigator{
+  height:56rpx;
+  font-size:40rpx;
+  color:rgba(0,0,0,1);
+  line-height:56rpx;
+  padding:14rpx 30rpx 18rpx;
+  border:1rpx solid #E5E5E5;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 28rpx;
+}
+.weui-footer{
+  padding: 48rpx;
+}

@@ -1,0 +1,14 @@
+<?php
+//000000000000
+ exit();?>
+a:8:{i:0;a:4:{s:2:"id";i:9;s:4:"name";s:2:"os";s:4:"type";s:8:"checkbox";s:7:"content";s:52:"windows|Windows
+linux|Linux
+mac|Mac
+ubuntu|Ubuntu";}i:1;a:4:{s:2:"id";i:10;s:4:"name";s:7:"version";s:4:"type";s:6:"string";s:7:"content";s:28:"value1|title1
+value2|title2";}i:2;a:4:{s:2:"id";i:11;s:4:"name";s:8:"filesize";s:4:"type";s:6:"string";s:7:"content";s:28:"value1|title1
+value2|title2";}i:3;a:4:{s:2:"id";i:12;s:4:"name";s:8:"language";s:4:"type";s:8:"checkbox";s:7:"content";s:23:"zh-cn|中文
+en|英文";}i:4;a:4:{s:2:"id";i:13;s:4:"name";s:11:"downloadurl";s:4:"type";s:5:"array";s:7:"content";s:50:"local|本地下载地址
+baidu|百度网盘地址";}i:5;a:4:{s:2:"id";i:14;s:4:"name";s:11:"screenshots";s:4:"type";s:6:"images";s:7:"content";s:28:"value1|title1
+value2|title2";}i:6;a:4:{s:2:"id";i:15;s:4:"name";s:5:"price";s:4:"type";s:6:"number";s:7:"content";s:28:"value1|title1
+value2|title2";}i:7;a:4:{s:2:"id";i:16;s:4:"name";s:9:"downloads";s:4:"type";s:6:"string";s:7:"content";s:28:"value1|title1
+value2|title2";}}

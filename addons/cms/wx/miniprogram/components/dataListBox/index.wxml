@@ -1,0 +1,30 @@
+<view class="list-data">
+    <view class="info-box">
+        <view class="title" data-id="{{item.id}}" bindtap="onCardClick">{{item.title}}</view>
+        <view class="btns" wx:if="{{patient_id}}">
+            <button open-type="share" class="btn browse-btn" data-idx="{{ index }}">转发</button>
+            <view class="btn favorites-btn" bindtap="onFavClick" data-action="fav" data-id="{{ item.id }}" wx:if="{{!item.has_fav}}">
+                收藏
+            </view>
+            <view class="btn browse-btn" wx:else>已收藏</view>
+        </view>
+        <view class="btns" wx:else>
+            <button open-type="share" class="btn browse-btn" data-idx="{{ index }}">转发</button>
+        </view>
+        <view class="record">
+            <view>
+                <text class="k">浏览</text>
+                <text class="v">{{item.views}}</text>
+            </view>
+            <view>
+                <text class="k">转发</text>
+                <text class="v">{{item.times_share}}</text>
+            </view>
+            <view>
+                <text class="k">收藏</text>
+                <text class="v">{{item.likes}}</text>
+            </view>
+        </view>
+    </view>
+    <image src="{{item.image}}" mode="aspectFill" data-id="{{item.id}}" bindtap="onCardClick"></image>
+</view>

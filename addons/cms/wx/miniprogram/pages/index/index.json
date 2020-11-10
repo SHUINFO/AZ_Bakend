@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "IPS",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "shareImage": "../../components/shareImage/index",
+    "dataListBox": "../../components/dataListBox/index"
+  }
+}

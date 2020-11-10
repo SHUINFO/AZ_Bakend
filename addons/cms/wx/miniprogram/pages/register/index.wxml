@@ -1,0 +1,69 @@
+<view class="page-content page-register data-v-7a7f2b7e">
+	<view class="card data-v-7a7f2b7e">
+		<view class="card-doc data-v-7a7f2b7e">
+			<image src="/static/image/test_photo.png" mode="aspectFill" class="data-v-7a7f2b7e"></image>
+			<view class="data-v-7a7f2b7e">
+				<view class="name data-v-7a7f2b7e">李善群 医生</view>
+				<view class="job data-v-7a7f2b7e">呼吸科主任医师</view>
+				<view class="hospital data-v-7a7f2b7e">交通大学附属中山医院</view>
+			</view>
+		</view>
+		<view class="card-work data-v-7a7f2b7e">
+			<block wx:for="{{['用药打卡','治疗科普','问医生','用药推荐']}}" wx:for-item="item" wx:for-index="__i0__" wx:key="*this">
+				<view class="data-v-7a7f2b7e">{{''+item+''}}</view>
+			</block>
+		</view>
+	</view>
+	<view class="form-box data-v-7a7f2b7e">
+		<view class="title data-v-7a7f2b7e">患者服务专区<text class="info data-v-7a7f2b7e">入组登记</text></view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">姓名</view>
+			<view class="input data-v-7a7f2b7e"><input maxlength="25" data-event-opts="{{[['input',[['__set_model',['$0','name','$event',[]],['form']]]]]}}" value="{{form.name}}" bindinput="__e" class="data-v-7a7f2b7e" /></view>
+		</view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">年龄</view>
+			<view class="input data-v-7a7f2b7e"><input type="number" maxlength="3" data-event-opts="{{[['input',[['__set_model',['$0','age','$event',[]],['form']]]]]}}" value="{{form.age}}" bindinput="__e" class="data-v-7a7f2b7e" /></view>
+		</view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">性别</view>
+			<picker value="{{sexChose}}" range="{{sexData}}" range-key="title" data-event-opts="{{[['change',[['onSexPickerChose',['$event']]]]]}}" bindchange="__e" class="data-v-7a7f2b7e">
+				<view class="input data-v-7a7f2b7e"><text class="data-v-7a7f2b7e">{{sexData[sexChose]?sexData[sexChose].title:''}}</text>
+					<image class="icon-arr data-v-7a7f2b7e" src="/static/image/icon_arrow_down.png"></image>
+				</view>
+			</picker>
+		</view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">手机号</view>
+			<view class="input data-v-7a7f2b7e"><input type="number" maxlength="11" data-event-opts="{{[['input',[['__set_model',['$0','phone','$event',[]],['form']]]]]}}" value="{{form.phone}}" bindinput="__e" class="data-v-7a7f2b7e" /></view>
+		</view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">所患疾病</view>
+			<picker value="{{sickChose}}" range="{{sickData}}" range-key="title" data-event-opts="{{[['change',[['onSickPickerChose',['$event']]]]]}}" bindchange="__e" class="data-v-7a7f2b7e">
+				<view class="input data-v-7a7f2b7e"><text class="data-v-7a7f2b7e">{{sickData[sickChose]?sickData[sickChose].title:''}}</text>
+					<image class="icon-arr data-v-7a7f2b7e" src="/static/image/icon_arrow_down.png"></image>
+				</view>
+			</picker>
+		</view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">病史</view>
+			<view class="input data-v-7a7f2b7e"><input maxlength="140" data-event-opts="{{[['input',[['__set_model',['$0','history','$event',[]],['form']]]]]}}" value="{{form.history}}" bindinput="__e" class="data-v-7a7f2b7e" /></view>
+		</view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">吸烟史</view>
+			<picker value="{{smokeChose}}" range="{{smokeData}}" range-key="title" data-event-opts="{{[['change',[['onSmokePickerChose',['$event']]]]]}}" bindchange="__e" class="data-v-7a7f2b7e">
+				<view class="input data-v-7a7f2b7e"><text class="data-v-7a7f2b7e">{{smokeData[smokeChose]?smokeData[smokeChose].title:''}}</text>
+					<image class="icon-arr data-v-7a7f2b7e" src="/static/image/icon_arrow_down.png"></image>
+				</view>
+			</picker>
+		</view>
+		<view class="form-li data-v-7a7f2b7e">
+			<view class="label data-v-7a7f2b7e">使用药品</view>
+			<picker value="{{drugChose}}" range="{{drugData}}" range-key="title" data-event-opts="{{[['change',[['onDrugPickerChose',['$event']]]]]}}" bindchange="__e" class="data-v-7a7f2b7e">
+				<view class="input data-v-7a7f2b7e"><text class="data-v-7a7f2b7e">{{drugData[drugChose]?drugData[drugChose].title:''}}</text>
+					<image class="icon-arr data-v-7a7f2b7e" src="/static/image/icon_arrow_down.png"></image>
+				</view>
+			</picker>
+		</view>
+		<view class="control data-v-7a7f2b7e"><button data-event-opts="{{[['tap',[['onSubmit',['$event']]]]]}}" class="sub-btn data-v-7a7f2b7e" bindtap="__e">完成</button></view>
+	</view>
+</view>

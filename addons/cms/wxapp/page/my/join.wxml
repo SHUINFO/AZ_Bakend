@@ -1,0 +1,78 @@
+<view class="container">
+
+<view class="doctor-card">
+  <image src="/assets/images/doctor_bg.png" mode="widthFix" class="bg" />
+  <image src="{{doctorInfo.avatar}}" mode="widthFit" class="avatar" />
+  <view class="name">{{doctorInfo.name}} 医生</view>
+  <view class="position">{{doctorInfo.department}}{{doctorInfo.position}}</view>
+  <view class="hospital">{{doctorInfo.hospital.name}}</view>
+  <view class="split"></view>
+  <view class="intro">
+    <view class="dd">·用药打卡</view>
+    <view class="dd">·治疗科普</view>
+    <view class="dd">·问医生</view>
+    <view class="dd">·用药推荐</view>
+  </view>
+</view>
+  <form bindsubmit="formSubmit">
+    <view class="weui-form">
+  
+<view class="title">
+  患者服务专区
+  <view class="small">
+  入组登记
+  </view>
+</view>
+
+  <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">姓名</view>
+        <input type="text" name="row[name]" value="{{ userInfo.name }}" placeholder="请输入昵称" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+      
+
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">手机</view>
+        <input type="text" name="row[mobile]" value="{{ mobile }}" placeholder="请输入昵称" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">性别</view>
+        <picker name="row[gender]" bindchange="bindPickerChange" data-field="gender" value="{{userInfo.gender}}" class="zan-field__input zan-cell__bd" range-key="name" range="{{genderArr}}">
+          <view class="picker">
+            {{genderArr[genderIndex].name}}
+          </view>
+        </picker>
+        <!-- <input type="text" name="row[gender]" value="{{ userInfo.gender }}" placeholder="请输入昵称" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" /> -->
+      </view>
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">出生年份</view>
+        <input type="text" name="row[birth_year]" value="{{ userInfo.birth_year }}" placeholder="请输入昵称" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">所患疾病</view>
+        <picker name="row[disease]" bindchange="bindPickerChange" data-field="disease" value="{{userInfo.disease}}" class="zan-field__input zan-cell__bd" range="{{diseaseArr}}">
+          <view class="picker">
+            {{diseaseArr[diseaseIndex]}}
+          </view>
+        </picker>
+      </view>
+
+      
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">使用药品</view>
+        <picker name="row[medicine]" bindchange="bindPickerChange" data-field="medicine" value="{{userInfo.medicine}}" class="zan-field__input zan-cell__bd" range="{{medicineArr}}">
+          <view class="picker">
+            {{medicineArr[medicineIndex]}}
+          </view>
+        </picker>
+      </view>
+
+      
+
+
+    </view>
+    <view class="weui-btns">
+      <button type="primary" size="large" formType="submit" class='weui-btn weui-btn_primary'>完成</button>
+    </view>
+  </form>
+</view>

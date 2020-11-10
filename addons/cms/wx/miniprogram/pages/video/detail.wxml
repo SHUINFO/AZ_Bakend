@@ -1,0 +1,15 @@
+<view class="page-content page-article data-v-6d004d46">
+	<view class="media-box data-v-6d004d46">
+		<block wx:if="{{post.video}}">
+					<video class="video-com data-v-6d004d46" id="myVideo" src="{{post.video}}" controls="{{true}}" poster="{{post.video_cover}}"></video>
+		</block>
+	</view>
+	<view class="word-box data-v-6d004d46">
+		<view class="title data-v-6d004d46">
+            {{post.title}}
+            </view>
+		<view class="data-v-6d004d46">
+            {{post.content}}
+            </view>
+	</view>
+</view>

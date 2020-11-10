@@ -1,0 +1,13 @@
+<view class="page-content page-videolist data-v-227cd848">
+	<block wx:for="{{listData}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id">
+		<view data-event-opts="{{[['tap',[['goToDetail',['$0'],[[['listData','id',item.id]]]]]]]}}" class="list-one data-v-227cd848" bindtap="__e">
+			<view class="title data-v-227cd848">
+				<view class="t data-v-227cd848">{{item.title}}</view>
+				<view class="s data-v-227cd848">{{"("+item.size+" MB)"}}</view>
+			</view>
+			<view class="pic data-v-227cd848">
+				<image class="pic-video data-v-227cd848" mode="aspectFill" src="/static/image/test_photo.png"></image>
+			</view>
+		</view>
+	</block>
+</view>

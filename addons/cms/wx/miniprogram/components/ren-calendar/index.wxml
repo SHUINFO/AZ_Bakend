@@ -1,0 +1,30 @@
+<view class="calendar-wrapper data-v-a628a180">
+	<block>
+		<view class="header data-v-a628a180">
+			<view class="pre data-v-a628a180" bindtap="changeMonth" data-type="pre">
+			<image src="arrow.svg" />
+			</view>
+			<view class="title data-v-a628a180">{{f0+'月'}}<text class="year data-v-a628a180">{{y}}</text></view>
+			<view bindtap="changeMonth"  data-type="next" class="next data-v-a628a180">
+		<image src="arrow.svg" />
+			</view>
+		</view>
+	</block>
+	<view class="week data-v-a628a180">
+		<block wx:for="{{weekDay}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<view class="week-day data-v-a628a180">{{item}}</view>
+		</block>
+	</view>
+	<view class="content data-v-a628a180" style="{{'height:'+(height)+';'}}">
+		<view class="days data-v-a628a180" style="{{'top:'+(positionTop+'rpx')+';'}}">
+			<block wx:for="{{l0}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+				<view class="item data-v-a628a180">
+					<view class="{{['day data-v-a628a180',(!item.$orig.isCurM)?'nolm':'',(item.m0)?'isWorkDay':'',(item.m1&&item.$orig.isCurM)?'marked':'']}}" bindtap="selectOne" data-item="{{item}}">{{''+item.m2+''}}</view>
+					<block wx:if="{{item.m3&&item.$orig.isCurM}}">
+						<view class="markDay data-v-a628a180"></view>
+					</block>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>

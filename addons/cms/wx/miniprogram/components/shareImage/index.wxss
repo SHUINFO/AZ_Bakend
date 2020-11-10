@@ -1,0 +1,12 @@
+.share-image-canvas{
+  visibility: hidden;
+  opacity: 0;
+  transform: rotate(-90deg);
+  position: fixed;
+  width: 450px;
+  height: 370px;
+  left: -10000px;
+  top: -10000px;
+  z-index: -100;
+  pointer-events: none;
+}

@@ -1,0 +1,213 @@
+.search-box {
+  padding: 0 48rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 136rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+
+.search-box .search-in {
+  border-radius: 24rpx;
+  background: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 96rpx
+}
+
+.search-box .search-in .search-icon {
+  width: 96rpx;
+  height: 96rpx;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  flex: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center
+}
+
+.search-box .search-in .search-icon>image {
+  width: 48rpx;
+  height: 48rpx
+}
+
+.search-box .search-in input {
+  height: 96rpx;
+  line-height: 96rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1
+}
+
+.tab-nav {
+  border-bottom: solid 1px #e0e0e0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 48rpx;
+  height: 90rpx;
+  background-color:#fff;
+  justify-content: space-between;
+}
+
+.tab-nav>view {
+  position: relative;
+  padding: 0 26rpx;
+  font-size: 36rpx;
+  color: #9393aa;
+  -webkit-transition: color 256ms;
+  transition: color 256ms;
+  line-height: 90rpx;
+  font-weight: 500;
+}
+
+.tab-nav>view.checked {
+  color: #3d1054
+}
+
+.tab-nav>view.checked::after {
+  left: 0;
+  width: 100%
+}
+
+.tab-nav>view.checked+view::after {
+  left: 0
+}
+
+.tab-nav>view::after {
+  content: "";
+  position: absolute;
+  height: 4rpx;
+  width: 0;
+  background: #3d1054;
+  bottom: -4rpx;
+  left: 100%;
+  -webkit-transition: width 256ms, left 256ms;
+  transition: width 256ms, left 256ms
+}
+
+.tab-list-box {
+  background-color: #fff;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  flex: none;
+  height: calc(100vh - 236rpx);
+  height: calc(100vh - 100rpx)
+}
+
+.list-data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30rpx 0;
+  margin:0 48rpx;
+}
+.list-data:first-of-type {
+  padding-top: 60rpx
+}
+
+.list-data+.list-data {
+  border-top: solid 1px rgba(0,0,0,.1);
+}
+
+.list-data > image {
+  width: 228rpx;
+  height: 228rpx;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  flex: none;
+  border-radius: 12rpx;
+  margin-left: 30rpx;
+}
+
+.list-data .info-box {
+  width: 396rpx;
+}
+.list-data .info-box .title {
+  font-size: 40rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.2;
+  color: #1E1F20;
+}
+
+.list-data .info-box .btns {
+  margin-top: 24rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-data .info-box .btns > .btn {
+  width: 108rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 24rpx;
+  border-radius: 24rpx;
+  display: inline-block;
+  margin: 0;
+  box-sizing: border-box;
+}
+.list-data .info-box .btns > .btn + .btn {
+  margin-left: 14rpx;
+}
+.list-data .info-box .btns > .btn.browse-btn {
+  background: #13b3b4;
+  color: #fff;
+}
+
+.list-data .info-box .btns > .btn.favorites-btn {
+  border: solid 1px #13b3b4;
+  color: #9494ab;
+  -webkit-transition: background-color 256ms;
+  transition: background-color 256ms;
+}
+
+.list-data .info-box .btns > .btn.favorites-btn:active {
+  background-color: #f0f0f0;
+}
+
+.list-data .info-box .record {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 24rpx;
+}
+
+.list-data .info-box .record > view {
+  margin-right: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.list-data .info-box .record .k {
+  font-size: 22rpx;
+  color: #9393aa;
+}
+
+.list-data .info-box .record .v {
+  font-size: 26rpx;
+  color: #1da1f2;
+  margin-left: 8rpx;
+}

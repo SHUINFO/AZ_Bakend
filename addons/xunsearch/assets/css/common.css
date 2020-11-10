@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+    background: #fff;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.form-search label {
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+/* 搜索结果列表 */
+.result-list {
+    margin: 0;
+}
+
+.result-list dd {
+    margin-bottom: 20px;
+    /*border-bottom:1px solid #f3f3f3;*/
+}
+
+.result-list dd:last-child {
+    margin-bottom: 0;
+}
+
+.result-list dd .description {
+    font-size: 14px;
+    color: #666;
+}
+
+.result-list dd .extra, .result-list dd a {
+    font-size: 13px;
+    color: green;
+    margin-top: 5px;
+}
+
+.result-list dd .extra span {
+    margin-right: 5px;
+}
+
+.result-list dd .extra strong {
+    font-weight: 400;
+    margin-right: 1px;
+}
+
+.result-list h4 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 3px;
+    line-height: 1.54;
+}
+
+.result-list h4 a {
+    color: #007bff;
+}
+
+.result-list em {
+    color: #c00;
+    font-style: normal;
+}
+
+/* 相关搜索 */
+.search-suggestion {
+    background-color: #F5F5F5;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.search-results {
+    margin-bottom: 25px;
+}
+
+.search-links {
+    margin: 0 0 25px 0;
+}
+
+.search-links a {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+/* 分页样式 */
+.pager li {
+    margin: 0 .4em;
+    display: inline-block
+}
+
+.pager li:first-child > a, .pager li:first-child > span, .pager li:last-child > a, .pager li:last-child > span {
+    padding: .5em 1.2em
+}
+
+.pager li > a, .pager li > span {
+    background: 0 0;
+    border: 1px solid #e6e6e6;
+    border-radius: .25em;
+    padding: .5em .93em;
+    font-size: 14px
+}
+
+/* 搜索建议 */
+.autocomplete-suggestions {
+    text-align: left;
+    cursor: default;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    position: absolute;
+    display: none;
+    z-index: 1029;
+    max-height: 254px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.autocomplete-search .autocomplete-suggestion {
+    padding: 5px 12px;
+}
+
+.autocomplete-search .autocomplete-suggestion:hover {
+    background: #f0f0f0;
+}
+
+footer {
+    background-color: #222222;
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}

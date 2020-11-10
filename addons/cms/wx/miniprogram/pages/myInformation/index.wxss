@@ -1,0 +1,28 @@
+.page-myinformation.data-v-5bc813a5 {
+  min-height: 100vh;
+  padding: 26rpx 0;
+  background-color:#ffffff;
+}
+.page-myinformation .nav-li.data-v-5bc813a5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 108rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  color: #000;
+  font-size: 36rpx;
+
+  background-color: #fff;
+}
+.page-myinformation .nav-li > view.data-v-5bc813a5:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+.page-myinformation .nav-li + .nav-li {
+  border-top: solid 1px #e5e5e5;
+}

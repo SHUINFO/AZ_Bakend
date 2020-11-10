@@ -1,0 +1,19 @@
+@import "assets/styles/weui.wxss";
+@import "assets/styles/doctorCard.wxss";
+@import "assets/styles/font-awesome.wxss";
+
+page {
+  background-color: #fff;
+  font-size: 14px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+  color:rgba(30,31,32,1);
+  font-size:32rpx;
+  line-height:32rpx;
+}
+
+.container{
+  width:670rpx;
+  margin:auto;
+}
+

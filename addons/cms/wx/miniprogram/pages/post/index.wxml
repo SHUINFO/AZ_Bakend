@@ -1,0 +1,52 @@
+<view class="page-content page-science">
+	<!-- <view class="search-box">
+		<view class="search-in">
+			<view data-event-opts="{{[['tap',[['onSearch',['$event']]]]]}}" class="search-icon" bindtap="__e">
+				<image src="/static/image/search-icon.png"></image>
+			</view><input placeholder="搜索文章" confirm-type="search" maxlength="50" djust-position="{{false}}" data-event-opts="{{[['confirm',[['onSearch',['$event']]]],['input',[['__set_model',['','searchValue','$event',[]]]]]]}}" value="{{searchValue}}" bindconfirm="__e" bindinput="__e" />
+		</view>
+	</view> -->
+
+	<view class="tab-nav" wx:if="{{patient_id}}">
+		<view  class="{{(tabChecked==0)?'checked':''}}" bindtap="showPost" data-mode='0'>医生推荐</view>
+		<view  class="{{(tabChecked==1)?'checked':''}}" bindtap="showPost" data-mode='1'>公共科普</view>
+		<view  class="{{(tabChecked==2)?'checked':''}}" bindtap="showPost" data-mode='2'>我的收藏</view>
+	</view>
+
+	<view class="tab-nav" wx:else>
+		<view  class="checked">公共科普</view>
+	</view>
+
+	<scroll-view class="tab-list-box" refresher-enabled="{{true}}" scroll-y="true" refresher-threshold="{{100}}" refresher-triggered="{{triggered}}" scroll-top="{{scrollViewTop}}" data-event-opts="{{[['scroll',[['onScroll',['$event']]]],['scrolltolower',[['onScrollBottom',['$event']]]],['refresherrefresh',[['onScrollFlash',['$event']]]]]}}" bindscroll="__e" bindscrolltolower="__e" bindrefresherrefresh="__e">
+		<block wx:for="{{listData}}" wx:for-item="item" wx:key="id">
+			<view class="list-data" >
+				<view class="info-box">
+					<view class="title" data-id="{{item.id}}" bindtap="gotoDetail">{{item.title}}</view>
+					
+					<view class="btns" wx:if="{{patient_id}}">
+						<button open-type="share" class="btn browse-btn" data-idx="{{ index }}">转发</button>
+						<view class="btn favorites-btn" bindtap="action" data-action="fav" data-id="{{ item.id }}" wx:if="{{!item.has_fav}}">
+							收藏
+						</view>
+						<view class="btn browse-btn" wx:else>
+							已收藏
+						</view>
+					</view>
+					<view class="btns" wx:else>
+						<button open-type="share" class="btn browse-btn" data-idx="{{ index }}">转发</button>
+					</view>
+
+					<view class="record">
+						<view><text class="k">浏览</text><text class="v">{{item.views}}</text></view>
+						<view><text class="k">转发</text><text class="v">{{item.times_share}}</text></view>
+
+						<view><text class="k">收藏</text><text class="v">{{item.likes}}</text></view>
+						<!-- <view><text class="k">收藏</text><text class="v">{{item.favorites}}</text></view> -->
+						<!-- <view><text class="k">点赞</text><text class="v">{{item.like}}</text></view> -->
+					</view>
+				</view>
+				<image src="{{item.image}}" mode="aspectFill" data-id="{{item.id}}" bindtap="gotoDetail"></image>
+			</view>
+		</block>
+	</scroll-view>
+</view>

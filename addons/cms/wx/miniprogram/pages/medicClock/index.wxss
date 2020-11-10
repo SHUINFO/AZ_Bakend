@@ -1,0 +1,170 @@
+.page-medicclock.data-v-25a39d10 {
+  padding-bottom: 40rpx
+}
+
+.page-medicclock .head-box.data-v-25a39d10 {
+  box-sizing: border-box;
+  padding: 40rpx 48rpx
+}
+
+.page-medicclock .head-box .title-box.data-v-25a39d10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between
+}
+
+.page-medicclock .head-box .title-box .title>view.data-v-25a39d10 {
+  font-weight: 500
+}
+
+.page-medicclock .head-box .title-box .title>view.data-v-25a39d10:nth-child(1) {
+  font-size: 44rpx
+}
+
+.page-medicclock .head-box .title-box .title>view.data-v-25a39d10:nth-child(2) {
+  font-size: 32rpx;
+  margin-top: 20rpx
+}
+
+.page-medicclock .head-box .title-box .linkto.data-v-25a39d10 {
+  font-size: 24rpx;
+  color: #1DA1F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+
+.page-medicclock .head-box .title-box .linkto .iconfont.data-v-25a39d10 {
+  margin-left: 6rpx;
+  font-size: 20rpx
+}
+
+.page-medicclock .head-box .times.data-v-25a39d10 {
+  color: #9393aa;
+  height: 112rpx;
+  line-height: 112rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  font-size: 40rpx;
+  font-weight: 500;
+  padding: 0 28rpx;
+  margin-top: 30rpx
+}
+
+.page-medicclock .clock-box.data-v-25a39d10 {
+  padding: 0 48rpx;
+  box-sizing: border-box
+}
+
+.page-medicclock .clock-box .btns.data-v-25a39d10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between
+}
+
+.page-medicclock .clock-box .btns .clock.data-v-25a39d10 {
+  width: 310rpx;
+  height: 312rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 20rpx
+}
+
+.page-medicclock .clock-box .btns .clock .title.data-v-25a39d10 {
+  font-size: 48rpx;
+  font-weight: 500;
+  text-align: center;
+  z-index: 2;
+  position: relative
+}
+
+.page-medicclock .clock-box .btns .clock .title.on.data-v-25a39d10 {
+  color: #fff
+}
+
+.page-medicclock .clock-box .btns .clock .title.off.data-v-25a39d10 {
+  color: #9393ac
+}
+
+.page-medicclock .clock-box .btns .clock .words.data-v-25a39d10 {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.page-medicclock .clock-box .btns .clock .words.on.data-v-25a39d10 {
+  font-size: 28rpx;
+  color: #fff;
+  top: 200rpx
+}
+
+.page-medicclock .clock-box .btns .clock .words.off.data-v-25a39d10 {
+  font-size: 36rpx;
+  font-weight: 400;
+  color: #9d9ab7;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+}
+
+.page-medicclock .clock-box .btns .clock .back.data-v-25a39d10 {
+  width: 310rpx;
+  height: 312rpx;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.page-medicclock .clock-box .btns .clock .on.data-v-25a39d10 {
+  display: none
+}
+
+.page-medicclock .clock-box .btns .clock .off.data-v-25a39d10 {
+  display: block
+}
+
+.page-medicclock .clock-box .btns .clock.done .on.data-v-25a39d10 {
+  display: block
+}
+
+.page-medicclock .clock-box .btns .clock.done .off.data-v-25a39d10 {
+  display: none
+}
+
+.page-medicclock .clock-box .switch-box.data-v-25a39d10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  color: #9393ae;
+  font-size: 24rpx;
+  margin-top: 60rpx
+}
+
+.page-medicclock .clock-box .switch-box .switch-clock.data-v-25a39d10 {
+  -webkit-transform: scale(.7);
+  transform: scale(.7)
+}
+
+.page-medicclock .calendar-box.data-v-25a39d10 {
+  margin-top: 50rpx
+}

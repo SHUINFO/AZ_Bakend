@@ -1,0 +1,68 @@
+<view class="container">
+  <!-- <view class="header">
+    <view class="avatar">
+      <image bindtap="uploadAvatar" src='{{ userInfo.avatar }}'></image>
+    </view>
+    <view class="account">
+      <navigator url="profile">
+        <view class="zan-font-16">
+          {{ userInfo.nickname }}
+        </view>
+      </navigator>
+      <view class="zan-font-12" wx:if="{{ userInfo.id }}">{{ userInfo.bio ? userInfo.bio : '写点什么介绍下自己吧!' }}</view>
+      <button wx:if="{{ userInfo.id==0 }}" open-type="getUserInfo" bindgetuserinfo="login" class="zan-btn zan-btn--mini btn-auth">立即登录</button>
+    </view>
+  </view> -->
+
+
+<!--   
+  <view class="zan-panel">
+    <view class="zan-row my-statistics">
+      <view class="zan-col zan-col-8">
+        <view bindtap="showTips" data-type="balance">
+          <view class="nums">￥{{ userInfo.balance || 0 }}</view>
+          <view class="placeholder">余额</view>
+        </view>
+      </view>
+      <view class="zan-col zan-col-8">
+        <view bindtap="showTips" data-type="score">
+          <view class="nums">{{ userInfo.score }}</view>
+          <view class="placeholder">积分</view>
+        </view>
+      </view>
+      <view class="zan-col zan-col-8">
+        <view bindtap="showTips" data-type="level">
+          <view class="nums">Lv.{{ userInfo.level }}</view>
+          <view class="placeholder">等级</view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+
+<navigator class="navigator" url="/pages/myInformation/index">
+<!-- <navigator url=""> -->
+    <text>我的基本信息</text>
+    <text class="fa fa-chevron-right"></text>
+</navigator>
+<navigator class="navigator" url="/pages/doctor/index">
+    我的咨询
+    <text class="fa fa-chevron-right"></text>
+</navigator>
+<view class="navigator" bindtap="gotoFav">
+     我的收藏
+     <text class="fa fa-chevron-right"></text>
+</view>
+<!-- <navigator class="" url="">
+     我的随访
+     <text class="fa fa-chevron-right"></text>
+</navigator>
+<navigator class="" url="">
+     我的指标
+     <text class="fa fa-chevron-right"></text>
+</navigator> -->
+
+<!-- <view class="weui-footer weui-footer_fixed-bottom">
+<button type="primary" class="weui-btn" open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber">登录</button>
+</view> -->
+
+</view>

@@ -1,0 +1,147 @@
+<view class="container">
+
+<view class="doctor-card">
+  <image src="/assets/images/doctor_bg.png" mode="widthFix" class="bg" />
+  <image src="{{doctorInfo.avatar}}" mode="widthFit" class="avatar" />
+  <view class="name">{{doctorInfo.name}} 医生</view>
+  <view class="position">{{doctorInfo.department}}{{doctorInfo.position}}</view>
+  <view class="hospital">{{doctorInfo.hospital.name}}</view>
+  <view class="split"></view>
+  <view class="intro">
+    <view class="dd">·用药打卡</view>
+    <view class="dd">·治疗科普</view>
+    <view class="dd">·问医生</view>
+    <view class="dd">·用药推荐</view>
+  </view>
+</view>
+  <form bindsubmit="formSubmit">
+    <view class="weui-form">
+  
+<view class="title">
+  患者服务专区
+  <view class="small">
+  入组登记
+  </view>
+</view>
+
+  <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">姓名</view>
+        <input type="text" name="row[name]" value="{{ userInfo.name }}" placeholder="请输入昵称" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+      
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">年龄</view>
+        <input type="text" name="age" value="{{ userInfo.age }}" placeholder="请输入年龄" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">性别</view>
+
+        <radio-group data-field="gender" name="row[gender]"   bindchange="bindRadioChange">
+          <label class="weui-check__label" wx:for="{{genderArr}}">
+            <radio value="{{index}}" checked="{{genderIndex == index}}" color="#13B3B4"/> {{item.name}}
+          </label>
+        </radio-group>
+
+
+        <!-- <picker name="row[gender]" bindchange="bindPickerChange" data-field="gender" value="{{userInfo.gender}}" class="zan-field__input zan-cell__bd" range-key="name" range="{{genderArr}}">
+          <view class="picker">
+            {{genderArr[genderIndex].name}}
+          </view>
+        </picker> -->
+        <!-- <input type="text" name="row[gender]" value="{{ userInfo.gender }}" placeholder="请输入昵称" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" /> -->
+      </view>
+
+
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">手机</view>
+       <view class="" style="display:flex">
+        
+        <input disabled="true" type="text" name="row[mobile]" value="{{ mobile }}" placeholder="请授权手机号" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+       <button wx:if="{{!mobile}}" type="primary" class="weui-btn" open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber">授权手机号</button>
+       </view>
+      </view>
+
+
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">关注疾病</view>
+        <picker name="row[disease]" bindchange="bindPickerChange" data-field="disease" value="{{userInfo.disease}}" class="zan-field__input zan-cell__bd" range="{{diseaseArr}}">
+          <view class="picker">
+            {{diseaseArr[diseaseIndex]}}
+          </view>
+        </picker>
+      </view>
+
+
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">与患者关系</view>
+        
+        <radio-group data-field="relative" name="row[relative]"   bindchange="bindRadioChange">
+          <label class="weui-check__label" wx:for="{{relativeArr}}">
+            <radio value="{{index}}" checked="{relativeIndex == index}}" color="#13B3B4"/> {{item.name}}
+          </label>
+        </radio-group>
+
+      </view>
+
+
+      <!-- <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">病史(年)</view>
+        <input type="text" name="diagnose_year" value="{{ userInfo.diagnose_year }}" placeholder="请输入病史" class="zan-field__input zan-cell__bd" placeholder-class="zan-field__placeholder" />
+      </view>
+
+      <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">吸烟史(年)</view>
+
+        <picker name="row[smoke]" bindchange="bindPickerChange" data-field="smoke" value="{{userInfo.smoke}}" class="zan-field__input zan-cell__bd"  range="{{smokeArr}}">
+          <view class="picker">
+            {{smokeArr[smokeIndex]}}
+          </view>
+        </picker>
+      </view> -->
+      
+      <!-- <view class="zan-cell zan-field">
+        <view class="zan-cell__hd zan-field__title">使用药品</view>
+        <picker name="row[medicine]" bindchange="bindPickerChange" data-field="medicine" value="{{userInfo.medicine}}" class="zan-field__input zan-cell__bd" range="{{medicineArr}}">
+          <view class="picker">
+            {{medicineArr[medicineIndex]}}
+          </view>
+        </picker>
+      </view> -->
+
+      <view class="protocol">
+          <label bindtap="onProtocolClick">
+            <radio color="#13B3B4" checked="{{isProtocolChecked}}" /> 我已阅读和同意
+          </label>
+          <text class="pro" bindtap="onProtocolShow">《知情同意书》</text>
+      </view>
+
+      <!-- 自定义Picker -->
+      <view class="{{isProtocolOpen ? 'picker-box show' : 'picker-box'}}" bindtap="onProtocolClose">
+        <view class="picker-body" catchtap="null">
+          <view class="t">知情同意书</view>
+          <scroll-view class="words" scroll-y="{{true}}">
+            <text>“杏树健康”关爱项目</text>
+            <text>亲爱的患者：</text>
+            <text class="p">您好！由上海博裔医药科技有限公司在全国发起的“杏树健康”关爱项目正在各地全面开展。该项目可以帮助您和您的家人更好的了解慢性阻塞性肺疾病和支气管哮喘等呼吸道疾病的相关知识，指导您更有效地控制病情，减轻病痛，提高生活质量。
+            如您有意愿参与该项目，请仔细阅读并同意如下项目知情同意书。</text>
+
+            <text>上海博裔医药科技有限公司</text>
+            <text class="p">2020年7月</text>
+
+            <text>“杏树健康”关爱项目知情同意书</text>
+            <text>本人理解并同意：</text>
+            <text>本人已阅读并理解本知情同意书有关信息，自愿参与“杏树健康”关爱项目（以下简称“项目”），通过该项目平台进行健康教育，同时本人愿意接受通过该项目系统或其他方式获得相关疾病及诊疗的有关知识和资讯。</text>
+            <text>本人理解并同意：参与该平台上的“杏树健康”关爱项目时，在关注平台环节和提起提问需求环节本人需要提供我的简单个人信息及治疗信息（包括但不限于性别、年龄、就诊医院、过往诊断和治疗信息等），项目平台将收集、接触和处理上述个人信息，并将严格保密，不会用于任何商业用途，仅用于“杏树健康”关爱项目的管理、执行和审计。患者信息和资料将由主办方和项目委托执行机构保留，除卫生监管部门审查监督和政府职能部门因管理需要外，不会披露给其他方。</text>
+            <text>本人理解所有通过该项目平台传达的任何有关疾病方面的讯息（包括但不限于直播课堂，线下课堂所讲述的内容和对患者提问的回复）仅可作为参考，并不能成为疾病诊断或治疗的依据，也不能代替由医疗卫生专业人士提供的任何专业医疗服务。项目发起方不承担本人在使用平台时可能产生的医疗风险和责任。</text>
+          </scroll-view>
+          <view class="control">
+            <view class="btn" bindtap="onProtocolSub">已阅读并关闭</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-btns">
+      <button class="sub-btn" type="primary" size="large" formType="submit" disabled="{{!isProtocolChecked}}">完成</button>
+    </view>
+  </form>
+</view>

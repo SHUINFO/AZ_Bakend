@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "用药打卡",
+  "usingComponents": {
+    "ren-calendar": "../../components/ren-calendar/index"
+  }
+}

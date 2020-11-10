@@ -1,0 +1,58 @@
+<view class="page-content page-medicclock data-v-25a39d10">
+	<view class="head-box data-v-25a39d10">
+		<view class="title-box data-v-25a39d10">
+			<view class="title data-v-25a39d10">
+				<view class="data-v-25a39d10">信必可都宝</view>
+				<view class="data-v-25a39d10">用药医嘱</view>
+			</view>
+			<view class="linkto data-v-25a39d10" bindtap="__e">
+			<navigator url="/pages/video/index">
+			查看药品使用教学视频
+			</navigator>
+			</view>
+		</view>
+		<view class="times data-v-25a39d10">每日2次，早晚各一次</view>
+	</view>
+	<view class="clock-box data-v-25a39d10">
+		<view class="btns data-v-25a39d10">
+			<view class="data-v-25a39d10 clock " bindtap="setClock" data-type="am" wx:if="{{!amDone}}">
+				<view class="title off data-v-25a39d10">上午</view>
+				<image class="back off data-v-25a39d10" src="/static/image/clock_off.png"></image>
+				<view class="words off data-v-25a39d10">待打卡</view>
+			</view>
+			<view class="data-v-25a39d10 clock done" bindtap="unsetClock" data-type="am" wx:else>
+				<view class="title on data-v-25a39d10">上午</view>
+				<image class="back on data-v-25a39d10" src="/static/image/clock_on.png"></image>
+				<view class="words on data-v-25a39d10">已打卡</view>
+			</view>
+
+
+			<view class="data-v-25a39d10 clock " bindtap="setClock" data-type="pm" wx:if="{{!pmDone}}">
+				<view class="title off data-v-25a39d10">下午</view>
+				<image class="back off data-v-25a39d10" src="/static/image/clock_off.png"></image>
+				<view class="words off data-v-25a39d10">待打卡</view>
+			</view>
+			<view class="data-v-25a39d10 clock done" bindtap="unsetClock" data-type="pm" wx:else>
+				<view class="title on data-v-25a39d10">下午</view>
+				<image class="back on data-v-25a39d10" src="/static/image/clock_on.png"></image>
+				<view class="words on data-v-25a39d10">已打卡</view>
+			</view>
+<!-- 
+
+
+			<view class="{{['data-v-25a39d10','clock',[(sourceData.pmDone)?'done':'']]}}" bindtap="setClock" data-type="pm">
+				<view class="title pm data-v-25a39d10">下午</view>
+				<image class="back on data-v-25a39d10" src="/static/image/clock_on.png"></image>
+				<image class="back off data-v-25a39d10" src="/static/image/clock_off.png"></image>
+				<view class="words on data-v-25a39d10">已打卡</view>
+				<view class="words off data-v-25a39d10">待打卡</view>
+			</view> -->
+		</view>
+		<!-- <view class="switch-box data-v-25a39d10"><text class="data-v-25a39d10">{{"签到提醒-"+(isClockOn?'已开启':'未开启')}}</text>
+			<switch class="switch-clock data-v-25a39d10" checked="{{isClockOn}}" color="#00D65B" data-event-opts="{{[['change',[['onClockChange',['$event']]]]]}}" bindchange="__e"></switch>
+		</view> -->
+	</view>
+	<view class="calendar-box data-v-25a39d10">
+		<ren-calendar bindmyevent="onMyEvent" markDays="{{markDays}}" data-ref="ren" class="data-v-25a39d10 vue-ref" bind:__l="__l"></ren-calendar>
+	</view>
+</view>
