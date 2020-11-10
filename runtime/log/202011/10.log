@@ -7377,3 +7377,476 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:51+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.common/init
+[运行时间：0.054520s] [吞吐率：18.34req/s] [内存消耗：802.08kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005449s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005474s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000587s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.common',
+  'action' => 'init',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.003619s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:51+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getReport
+[运行时间：0.011301s] [吞吐率：88.49req/s] [内存消耗：687.17kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000148s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000161s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000019s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '82',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '21',
+  'type' => '1',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getReport',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000115s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:51+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/doctor
+[运行时间：0.020676s] [吞吐率：48.36req/s] [内存消耗：803.45kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000139s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000150s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000021s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '66',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'doctor',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000083s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:51+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/recommend
+[运行时间：0.018066s] [吞吐率：55.35req/s] [内存消耗：818.14kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000011s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000118s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000128s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000066s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '81',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'admin_ids' => '5,7,8',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'recommend',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000076s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:52+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/login
+[运行时间：0.151416s] [吞吐率：6.60req/s] [内存消耗：695.03kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000132s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000018s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '166',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'code' => '091OpnFa1pbaXz0tXwIa1Lg1C62OpnFl',
+  'rawData' => '{"nickName":"--","avatarUrl":"","gender":0}',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'login',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000166s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:54+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/recommend
+[运行时间：0.011766s] [吞吐率：84.99req/s] [内存消耗：818.08kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000318s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000360s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000029s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '91',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'channel' => '4',
+  'admin_ids' => '5,7,8',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'recommend',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000094s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:55+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.archives/index
+[运行时间：0.013806s] [吞吐率：72.43req/s] [内存消耗：792.80kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000181s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000193s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000018s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '71',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'channel' => '4',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.archives',
+  'action' => 'index',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000082s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:57+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getClock
+[运行时间：0.007159s] [吞吐率：139.68req/s] [内存消耗：690.20kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000009s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000088s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000098s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000015s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '91',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '21',
+  'y' => '2020',
+  'm' => '11',
+  'd' => '0',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000062s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:57+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getClock
+[运行时间：0.012272s] [吞吐率：81.49req/s] [内存消耗：690.41kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000204s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000215s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000018s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '92',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '21',
+  'y' => '2020',
+  'm' => '11',
+  'd' => '10',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getClock',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000085s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-10T23:19:57+08:00 ] 211.161.247.115 POST az-ips.wxhoutai.com/addons/cms/wxapp.user/getUserStatistics
+[运行时间：0.010960s] [吞吐率：91.24req/s] [内存消耗：741.98kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000212s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000226s ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000023s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx3a184d7599515c1e/5/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2693 MMWEBSDK/200801 Mobile Safari/537.36 MMWEBID/8743 MicroMessenger/7.0.18.1740(0x2700128E) Process/appbrand2 WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64',
+  'charset' => 'utf-8',
+  'content-length' => '75',
+  'connection' => 'keep-alive',
+  'host' => 'az-ips.wxhoutai.com',
+)
+[ info ] [ PARAM ] array (
+  'patient_id' => '21',
+  'user_id' => '23',
+  'token' => 'f95ed1c0-f42f-4fd1-90ee-35a6fb80caa5',
+  '_ajax' => '1',
+  'addon' => 'cms',
+  'controller' => 'wxapp.user',
+  'action' => 'getUserStatistics',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /data/wwwroot/AZ_Bakend/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000086s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend//addons/cms/lang/zh-cn.php
+[ info ] [ LANG ] /data/wwwroot/AZ_Bakend/public/../application//index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
