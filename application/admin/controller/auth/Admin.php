@@ -216,7 +216,19 @@ class Admin extends Backend
                     'mobile'=>$params['email']
                 );
                 if ($params) {
-                    $this->modelDoctor->save($params);
+                    $r = $this->modelDoctor->save($params);
+                    if ($r && $this->modelDoctor->getLastInsID()) {
+                        //评估量表增加对应数据提交
+                        $path = "createdoctor";
+                        $data = [
+                            "login_name" => $params['mobile'],
+                            "password" => $params['mobile'],
+                            "name" => $params['name'],
+                            "doctorid" => $this->modelDoctor->getLastInsID(),
+                        ];
+                        $this->eastReq($path, $data);
+                    }
+
                 }
                 $this->success();
             }
