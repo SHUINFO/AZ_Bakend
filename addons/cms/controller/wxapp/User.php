@@ -255,6 +255,14 @@ class User extends Base
             }else{
                 $model->save($params);
                 $ids = $model->getLastInsID();
+
+                //需要配合写入对方东软的url地址
+                $path = "createpatient";
+                $data = $params;
+                $data['createdate'] = time();
+                $data['patientid'] = $ids;
+                $data['doctorid'] = $doctor_id;
+                $this->eastReq($path, $data);
             }
 
 
@@ -556,6 +564,17 @@ class User extends Base
         $params['createtime'] = time();
         if ($params) {
             model('app\admin\model\MedicalPatientqa')->save($params);
+
+            //数据发送东软
+            $path = "createqa";
+            $data = [
+                "patientid" => $patient_id,
+                "doctorid" => $doctor_id,
+                "question" => $question,
+                "id" => model('app\admin\model\MedicalPatientqa')->getLastInsID(),
+            ];
+            $this->eastReq($path, $data);
+
             $this->success();
         }
     }
@@ -614,9 +633,16 @@ class User extends Base
         $params['createtime'] = time();
         if ($params) {
             model('app\admin\model\MedicalPatientReport')->save($params);
-
-
             $this->setPoint($patient_id,'健康评估',2);
+
+            //评估量表增加对应数据提交
+            $path = "createscale";
+            $data = [
+                "patientid" => $patient_id,
+                "type" => $type,
+                "report" => $report,
+            ];
+            $this->eastReq($path, $data);
 
 
             $this->success();

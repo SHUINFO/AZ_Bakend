@@ -124,24 +124,38 @@ class Doctor extends Backend
            $params = $this->request->post("row/a");
            $params['createtime'] = time();
            $params['admin_id'] = $this->auth->id;
+
            if ($params) {
+
                $this->model->save($params);
+               $id =  $this->model->id;
 
-            $id =  $this->model->id;
-            try
-            {
-                $r = $this->getQrcode('DR' . $id);
-                $row = $this->model->get($id);
-                $params = array(
-                    'id' => $id,
-                    'wxgzh_qr' => $r
-                );
-                $row->save($params);
-            }
-            //捕获异常
-            catch(Exception $e){}
+               //评估量表增加对应数据提交
+               $path = "createdoctor";
+               $data = [
+                   "login_name" => $params['mobile'],
+                   "password" => $params['mobile'],
+                   "name" => $params['name'],
+                   "doctorid" => $id,
+               ];
+               $this->eastReq($path, $data);
+               try
+               {
+                   /**
+                   $r =$this->getQrcode('DR' . $id);
+                   $row = $this->model->get($id);
 
-            $this->success();
+                   $params = array(
+                        'id' => $id,
+                        'wxgzh_qr' => $r
+                    );
+
+                   $row->save($params);
+                    * **/
+               }
+               //捕获异常
+               catch(Exception $e){}
+               $this->success();
             $this->content = $params;
            }
            $this->error();
@@ -271,11 +285,6 @@ class Doctor extends Backend
     // $objWriter = new Xlsx();
     $spreadsheet = new Spreadsheet();
     $sheet = $spreadsheet->getActiveSheet();
-
-    // vendor('PHPExcel.PHPExcel');
-    // $objPHPExcel = new \PHPExcel();
-    // //设置保存版本格式
-    // $objWriter = new \PHPExcel_Writer_Excel5($objPHPExcel);
 
     //设置表头
     $sheet->setCellValue('A1','id');

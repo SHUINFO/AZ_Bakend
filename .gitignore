@@ -1,1 +1,4 @@
 runtime/
+.idea/
+public/
+application/database.php

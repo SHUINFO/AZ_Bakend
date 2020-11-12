@@ -280,4 +280,6 @@ return [
         //API接口地址
         'api_url'               => 'https://api.fastadmin.net',
     ],
+
+    "east_soft_url" => "http://fch.qiban365.com:9099/interface/server/",
 ];
