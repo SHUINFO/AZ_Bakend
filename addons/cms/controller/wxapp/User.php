@@ -262,7 +262,7 @@ class User extends Base
             //$data = $params;
             $data['name'] = $params['name'];
             $data['nickname'] = $params['name'];
-            $data['gender'] = isset($params['gender']) ? $params['gender']:0;
+            $data['gender'] = ($params['gender'] == "男") ? 1:2;
             $data['year'] = $params['birth_year'];
             $data['disease'] = $params['disease'];
             $data['mobile'] = $params['mobile'];
