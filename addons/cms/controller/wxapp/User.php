@@ -248,25 +248,35 @@ class User extends Base
             $row = $model->get(array('mobile'=>$mobile));
 
 
-        //登记病人
+            //登记病人
             if($row){
                 $ids = $row->id;
                 $row->save($params);
             }else{
                 $model->save($params);
                 $ids = $model->getLastInsID();
-
-                //需要配合写入对方东软的url地址
-                $path = "createpatient";
-                $data = $params;
-                $data['createdate'] = time();
-                $data['patientid'] = $ids;
-                $data['doctorid'] = $doctor_id;
-                $this->eastReq($path, $data);
             }
 
+            //需要配合写入对方东软的url地址
+            $path = "createpatient";
+            //$data = $params;
+            $data['name'] = $params['name'];
+            $data['nickname'] = $params['name'];
+            $data['gender'] = ($params['gender'] == 1) ? "男":"女";
+            $data['year'] = $params['birth_year'];
+            $data['disease'] = $params['disease'];
+            $data['mobile'] = $params['mobile'];
+            $data['address'] = "";
+            $data['smoke'] = "";
+            $data['medicine'] = isset($params['medicine']) ? $params['medicine'] : '';
+            $data['relative'] = ($params['relative'] == 1) ? "本人" : "亲属";
+            $data['createdate'] = time();
+            $data['patientid'] = $ids;
+            $data['doctorid'] = $doctor_id;
+            $this->eastReq($path, $data);
 
-        //绑定医生
+
+            //绑定医生
             $params2 = array(
                 'doctor_id'=> $doctor_id,
                 'patient_id'=>$ids
