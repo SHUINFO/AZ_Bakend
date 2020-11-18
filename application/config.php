@@ -282,4 +282,5 @@ return [
     ],
 
     "east_soft_url" => "http://fch.qiban365.com:9099/interface/server/",
+    "shuxin_key" => "Shuinfo@2020",
 ];

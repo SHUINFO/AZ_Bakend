@@ -84,6 +84,11 @@ class My extends Base
         $pCase = new PatientCase();
         $r = $pCase->save($params);
         if ($r) {
+            //病例数据增加对应数据提交
+            $path = "createcase";
+            $this->eastReq($path, $params);
+
+
             $this->success('成功');
         } else {
             $this->error('保存失败，请稍后重试！');

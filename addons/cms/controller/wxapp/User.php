@@ -486,6 +486,17 @@ class User extends Base
 
         $this->setPoint($patient_id,'用药打卡',1);
 
+        //数据发送东软
+        $path = "createmedicinal";
+        $data = [
+            "patientid" => $patient_id,
+            "year" => $y,
+            "month" => $m,
+            "day" => $d,
+            "type" => $type,
+        ];
+        $this->eastReq($path, $data);
+
         $this->success("成功");
     }
 

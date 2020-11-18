@@ -769,6 +769,12 @@ abstract class Model implements \JsonSerializable, \ArrayAccess
         return $this;
     }
 
+    public function getName()
+    {
+
+        return $this->name;
+    }
+
     /**
      * 设置需要隐藏的输出属性
      * @access public

@@ -4,10 +4,12 @@ namespace app\admin\library\traits;
 
 use app\admin\library\Auth;
 use Exception;
+use fast\Http;
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use PhpOffice\PhpSpreadsheet\Reader\Xls;
 use PhpOffice\PhpSpreadsheet\Reader\Csv;
+use think\Config;
 use think\Db;
 use think\exception\PDOException;
 use think\exception\ValidateException;
@@ -120,8 +122,10 @@ trait Backend
                         $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.add' : $name) : $this->modelValidate;
                         $this->model->validateFailException(true)->validate($validate);
                     }
+
                     $result = $this->model->allowField(true)->save($params);
                     Db::commit();
+
                 } catch (ValidateException $e) {
                     Db::rollback();
                     $this->error($e->getMessage());
@@ -133,6 +137,20 @@ trait Backend
                     $this->error($e->getMessage());
                 }
                 if ($result !== false) {
+                    //如果是文章需要提交东软这边
+                    $table = $this->model->getTable();
+                    if ($table != "" && $table == "fa_cms_archives") {
+                        $idN = model("addons\cms\model\Archives")->max("id");
+                        if ($idN) {
+                            $path = "createarts";
+                            $data = [
+                                "artId" => $idN,
+                                "artTitle" => $params['title'],
+                                "artUrl" => $params['wx_url'],
+                            ];
+                            $this->eastReq($path, $data);
+                        }
+                    }
                     $this->success();
                 } else {
                     $this->error(__('No rows were inserted'));
@@ -475,5 +493,26 @@ trait Backend
         }
 
         $this->success();
+    }
+
+    //远程调用链接
+    public static function eastReq($path, $data) {
+        $key = "Neusoft123";
+        $app_namespace = Config::get("east_soft_url");
+        $url = $app_namespace . $path;
+        $ti = time();
+        $sig = strtolower(md5($key.$ti));
+        $data["signature"] = $sig;
+        $data["operatime"] = $ti;
+        $data["createtime"] = $ti;
+        $ret = Http::sendRequestHeader($url, $data, "POST");
+        $day = date("Ymd");
+        $dir = "logs/".$day."/";
+        self::createDir($dir);
+        $r = $data;
+        $r["return"] = $ret;
+        file_put_contents($dir.$path.".log", json_encode($r)."\n", FILE_APPEND);
+        return $ret;
+
     }
 }
