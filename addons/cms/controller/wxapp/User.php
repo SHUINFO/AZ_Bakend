@@ -269,7 +269,8 @@ class User extends Base
             $data['address'] = "";
             $data['smoke'] = "";
             $data['medicine'] = isset($params['medicine']) ? $params['medicine'] : '';
-            $data['relative'] = ($params['relative'] == 1) ? "本人" : "亲属";
+            // $data['relative'] = ($params['relative'] == 1) ? "本人" : "亲属";
+            $data['relative'] = (int)$params['relative'];
             $data['createdate'] = time();
             $data['patientid'] = $ids;
             $data['doctorid'] = $doctor_id;
@@ -482,19 +483,22 @@ class User extends Base
         }
         $params['sign_time'] = strtotime($y.$m.$d);
 
-        model('app\admin\model\MedicalPatientClock')->save($params);
+        $model = model('app\admin\model\MedicalPatientClock');
+        $model->save($params);
 
         $this->setPoint($patient_id,'用药打卡',1);
 
         //数据发送东软
         $path = "createmedicinal";
         $data = [
-            "patientid" => $patient_id,
+            "patient_id" => $patient_id,
             "year" => $y,
             "month" => $m,
             "day" => $d,
             "type" => $type,
+            "id" => $model->id
         ];
+
         $this->eastReq($path, $data);
 
         $this->success("成功");
@@ -529,9 +533,21 @@ class User extends Base
             $params['type'] = $type; 
         }
 
+        $record = \app\admin\model\MedicalPatientClock::get($params);
+
         model('app\admin\model\MedicalPatientClock')->where($params)->delete();
 
         $this->setPoint($patient_id,'取消用药打卡',-1);
+
+
+        if($record && $record->id){
+            $path = "deletemedicinal";
+            $data = [
+                "patient_id" => $patient_id,
+                "id" => $record->id,
+            ];
+            $this->eastReq($path, $data);
+        }
 
         $this->success("成功");
     }
@@ -592,6 +608,7 @@ class User extends Base
                 "patientid" => $patient_id,
                 "doctorid" => $doctor_id,
                 "question" => $question,
+                "createtime" => $params['createtime'],
                 "id" => model('app\admin\model\MedicalPatientqa')->getLastInsID(),
             ];
             $this->eastReq($path, $data);
